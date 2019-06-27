@@ -1,0 +1,22 @@
+body {
+    width:100%;
+    background: url("../img/fondo-iguazu.jpg"); 
+    background-attachment: fixed;  
+    overflow-x: hidden; 
+}
+
+#logo {
+    background: #838DD1;
+}
+
+#menu ul li:hover {
+    background: #838DD1;
+}
+
+.button-more {
+    background: #838DD1;   
+}
+
+.button-up {    
+    background: #838DD1;
+}

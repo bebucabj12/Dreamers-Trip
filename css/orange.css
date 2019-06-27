@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    background: url("../img/fondo-puntacana.jpg"); 
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-position: center;
+}
+
+#logo {
+    background: #FE7140;
+}
+
+#menu ul li:hover {
+    background: #FE7140;
+}
+
+.button-more {
+    background: #FE7140;   
+}
+
+.button-up {    
+    background: #FE7140;
+}

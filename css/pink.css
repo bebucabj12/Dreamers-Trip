@@ -1,0 +1,18 @@
+body {
+    width: 100%;
+    background: url("../img/fondo.jpg"); 
+    background-attachment: fixed;   
+    overflow-x: hidden;
+}
+
+#logo {
+    background: #E9ADD5;
+}
+
+#menu ul li:hover {
+    background: #E9ADD5;
+}
+
+.button-more {
+    background: #E9ADD5;   
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="flaticon.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="css/pink.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--Moment-->
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Dreamers'Trip</title>
+</head>
+<body>
+    <div id="selector-theme">
+        <div id="to-pink">
+            <span class="flaticon-montana"></span>
+        </div>
+        <div id="to-blue">
+            <span class="flaticon-rio"></span>
+        </div>
+        <div id="to-orange">
+            <span class="flaticon-playa"></span>
+        </div>
+    </div>
+    <section id="global">
+        <header>
+            <div id="logo">
+               <h1>Dreamers'Trip</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#">RELOJ</a></li>
+                    <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--slider-->
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="img/francia-slider.jpg" title="Francia"></div>
+                <div><img src="img/madrid-slider.jpg" title="Madrid"></div>
+                <div><img src="img/newyork-slider.jpg" title="New York"></div>
+                <div><img src="img/cancun-slider.jpg" title="Cancun"></div>
+            </div>
+        </div>
+        <!--contenido-->
+        <section id="content">
+            <div id="posts">
+                <!--Se cargan los post desde el JSON-->        
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4>Quien soy?</h4>
+                    <img src="img/playa.jpg">
+                    <p>No llegaste aqui de casualidad, te gusta viajar, te gusra conocer lugares nuevos, sos aventurero o aventurera, estas soñando despierto y haciendo realidad todo eso que deseas. Sos un soñador por eso tenemos el viaje para vos. Ingresá.</p>
+                </div>
+                <div id="login">
+                    <h4>Ingresa</h4>
+                    <form>
+                        <lavel for="name">
+                            Name
+                        </lavel>
+                        <input type="text" name="name" id="form_name"><br>
+
+                        <lavel for="email">
+                            Email
+                        </lavel>
+                        <input type="text" name="email">
+
+                        <lavel for="password">
+                            Password
+                        </lavel>
+                        <input type="password" name="password">
+
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+            <a href="#" class="button-up">Subir</a>
+    </section>
+        <footer>
+            Pagina de proyecto U-demy &copy;
+        </footer>
+</body>
+</html>
