@@ -16,3 +16,6 @@ body {
 .button-more {
     background: #E9ADD5;   
 }
+.ui-accordion .ui-accordion-header-active {
+    background: #E9ADD5;
+}

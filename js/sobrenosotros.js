@@ -2,6 +2,7 @@ $(document).ready(function(){
     
     //Selector de tema
     var theme = $("#theme");
+    
     $("#to-pink").click(function(){
         theme.attr("href", "css/pink.css")
     })

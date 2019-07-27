@@ -20,3 +20,7 @@ body {
 .button-up {    
     background: #838DD1;
 }
+
+.ui-accordion .ui-accordion-header-active {
+    background: #838DD1;
+}

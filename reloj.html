@@ -7,14 +7,21 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="flaticon.css">
     <link rel="stylesheet" id="theme" type="text/css" href="css/pink.css">
+
+    <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!--slider-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">    
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/sobrenosotros.js"></script>
     <!--Moment-->
     <script scr="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.26/moment-timezone-with-data.min.js"></script>
+    
+    <script type="text/javascript" src="js/reloj.js"></script>
+
     <title>Dreamers'Trip</title>
 </head>
 <body>
@@ -44,20 +51,64 @@
                 </ul>
             </nav>
         </header>
-        <!--slider-->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/francia-slider.jpg" title="Francia"></div>
-                <div><img src="img/madrid-slider.jpg" title="Madrid"></div>
-                <div><img src="img/newyork-slider.jpg" title="New York"></div>
-                <div><img src="img/cancun-slider.jpg" title="Cancun"></div>
-            </div>
-        </div>
         <!--contenido-->
         <section id="content">
-            <div id="posts">
-                <!--Se cargan los post desde el JSON-->        
-            </div>
+            <div id="reloj">
+                <!--Se carga el reloj--> 
+                <div class="grid">
+                    <div class="left">
+                        <h2>Argentina</h2>
+                        <img src="img/argentina-hora.jpg">
+                        <div id="relojArg"></div>
+                    </div>
+                    <div class="right">
+                        <h2>New York</h2> 
+                        <img src="img/new-york-hora.jpg">
+                        <div id="relojNewYork"></div>
+                    </div>
+                    <div class="left">
+                        <h2>Amsterdam</h2>
+                        <img src="img/amsterdam-hora.jpg">
+                        <div id="relojAmsterdam"></div> 
+                    </div>
+                    <div class="right">
+                        <h2>Moscow</h2>
+                        <img src="img/moscow-hora.jpg">
+                        <div id="relojMoscow"></div>  
+                    </div>
+                    <div class="left">
+                        <h2>Berlin</h2>
+                        <img src="img/berlin-hora.jpg">
+                        <div id="relojBerlin"></div>
+                    </div>
+                    <div class="right">
+                        <h2>Darwin</h2>
+                        <img src="img/darwin-hora.jpg">
+                        <div id="relojDarwin"></div>  
+                    </div>
+                    <div class="left">
+                        <h2>Madrid</h2>
+                        <img src="img/madrid-hora.jpg">
+                        <div id="relojMadrid"></div> 
+                    </div>
+                    <div class="right">
+                        <h2>Roma</h2>
+                        <img src="img/roma-hora.jpeg">
+                        <div id="relojRoma"></div>
+                    </div>
+                    <div class="left">
+                        <h2>Puerto Rico</h2>
+                        <img src="img/puerto-rico-hora.jpg">
+                        <div id="relojPtoRico"></div>
+                    </div>
+                    <div class="right">
+                        <h2>San Pablo</h2>
+                        <img src="img/san-pabo-hora.jpg">
+                        <div id="relojSanPablo"></div>  
+                    </div>
+                </div>
+            </div>   
+            <hr class="v" />      
             <aside id="sidebar">
                 <div id="about">
                     <h4>Quien soy?</h4>
@@ -88,7 +139,6 @@
             </aside>
             <div class="clearfix"></div>
         </section>
-            <a href="#" class="button-up">Subir</a>
     </section>
         <footer>
             Pagina de proyecto U-demy &copy;

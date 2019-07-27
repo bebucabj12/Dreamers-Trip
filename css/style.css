@@ -54,7 +54,8 @@ body {
 #menu ul li:hover {
     background: #E9ADD5;
 }
- #menu a {
+
+#menu a {
      display: block;
      color: white;
      text-decoration: none;
@@ -70,7 +71,8 @@ body {
 #post {
     padding: 7px;
 }
- #post h2 {
+
+#post h2 {
      font-size: 30px;
      color: #E9ADD5;
 }
@@ -124,7 +126,9 @@ body {
 
 form input[type="text"],
 form input[type="password"],
-form input[type="email"] {
+form input[type="email"],
+form input[type="number"],
+select {
     padding: 5px;
     border-radius: 5px;
     border-color: 1px solid #ccc;
@@ -238,4 +242,97 @@ footer {
     width: 60%;
     float: left;
     margin-top: 40px;
+}
+
+.ui-accordion .ui-accordion-header-active {
+    background: #E9ADD5;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#reloj {
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica;
+}
+
+#reloj h2 {
+    font-family: Arial, Helvetica;
+    font-size: 20px;
+}
+
+#reloj img {
+    width: 150%;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+hr.v {
+    width: 1px;
+    height: 930px;
+    float: left;
+    margin-top: 40px;
+}
+
+#form_contact {
+    justify-content: center;
+    width: 50%;
+    margin-top: 15px; 
+    font-family: Arial, Helvetica;
+    margin-left: 40%;
+    width: 100%;   
+}
+
+#form_contact label {
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+ }
+
+ #contform {
+    width: 60%;
+    margin-top: 40px;
+}
+
+.form-error {
+    color: #E9ADD5;
+}
+
+#formulario h1 {
+    margin-left: 75%;
+    font-family: Arial, Helvetica;
+}
+
+#btnForm {
+    margin-left: 35%;
+}
+
+#content p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    text-align: justify;
+    font-family: Arial, Helvetica;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  200px 200px 200px 200px 200px;
 }
