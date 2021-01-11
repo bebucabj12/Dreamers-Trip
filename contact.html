@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,27 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="flaticon.css">
     <link rel="stylesheet" id="theme" type="text/css" href="css/pink.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">    
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
     <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
     <!--Plugins Validacion-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
     <script type="text/javascript" src="js/contact.js"></script>
     <title>Dreamers'Trip</title>
 </head>
+
 <body>
     <div id="selector-theme">
         <div id="to-pink">
@@ -35,53 +44,59 @@
     <section id="global">
         <header>
             <div id="logo">
-               <h1>Dreamers'Trip</h1>
+                <h1>Dreamers'Trip</h1>
             </div>
             <div class="clearfix"></div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="reloj.html">LA HORA</a></li>
-                    <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a href="contact.html">CONTACTO</a></li>
-                </ul>
+            <!--navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-center" id="menu">
+                    <ul class="navbar-nav text-center text-center" id="desktop">
+                        <li><a class="nav-link" href="index.html">INICIO</a></li>
+                        <li><a class="nav-link" href="reloj.html">LA HORA</a></li>
+                        <li><a class="nav-link" href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                        <li><a class="nav-link" href="contact.html">CONTACTO</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <!--contenido-->
         <section id="content">
-            <p>Cualquier inquietud, sugerencia, opinión o lo que quieras transmitirnos este es el espacio. Aqui nos conectamos directamente con tus ideas y visiones para poder crecer y que esta página que es de todos nosotros sea cada vez mas útil. Porque nosotros, los viajeros soñadores merecemos este espacio donde amamos compartir nuestras vivencias. Ayudanos a mejorar dia a dia.</p>
+            <p>Cualquier inquietud, sugerencia, opinión o lo que quieras transmitirnos este es el espacio. Aqui nos
+                conectamos directamente con tus ideas y visiones para poder crecer y que esta página que es de todos
+                nosotros sea cada vez mas útil. Porque nosotros, los viajeros soñadores merecemos este espacio donde
+                amamos compartir nuestras vivencias. Ayudanos a mejorar dia a dia.</p>
             <div id="contform">
-                <!--Se carga el formulario--> 
+                <!--Se carga el formulario-->
                 <div id="formulario">
                     <h1>Contacto</h1>
-                        <form action='' method='POST' id='form_contact'>
-                            <label for='name'>Nombre</label>
-                            <input data-validation='alphanumeric' type='text' name='name' />
+                    <form action='' method='POST' id='form_contact'>
+                        <label form='name'>Nombre</label>
+                        <input data-validation='alphanumeric' type='text' name='name' />
 
-                            <label for='lastname'>Apellido</label>
-                            <input data-validation='alphanumeric' type='text' name='lastname' />
+                        <label form='lastname'>Apellido</label>
+                        <input data-validation='alphanumeric' type='text' name='lastname' />
 
-                            <label for='email'>E-mail</label>
-                            <input data-validation='email' type='email' name='email' />
+                        <label form='email'>E-mail</label>
+                        <input data-validation='email' type='email' name='email' />
 
-                            <label for='sex'>Sexo</label>
-                            <select name='sex' data-validation='required'>
-                                <option value='men'>Hombre</option>
-                                <option value='woman'>Mujer</option>
-                            </select>
-
-                            <label for='years'>Edad</label>
-                            <input data-validation='number' type='number' name='year' />
-                            <br>
-                            <input id='btnForm'type='submit' value='Enviar'/>
-                        </form>
-                    </div>  
-            </div>         
+                        <label form='years'>Edad</label>
+                        <input data-validation='number' type='number' name='year' />
+                        <br>
+                        <textarea form="comentarios" rows="10" cols="49"
+                            type='text'>Escribe aquí tus comentarios</textarea>
+                        <input id='btnForm' type='submit' value='Enviar' />
+                    </form>
+                </div>
+            </div>
             <div class="clearfix"></div>
         </section>
     </section>
-        <footer>
-            Pagina de proyecto U-demy &copy;
-        </footer>
+    <footer>
+        Pagina de proyecto U-demy &copy;
+    </footer>
 </body>
+
 </html>

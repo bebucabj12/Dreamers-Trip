@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,31 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="flaticon.css">
     <link rel="stylesheet" id="theme" type="text/css" href="css/pink.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">    
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
     <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/sobrenosotros.js"></script>
     <!--Moment-->
     <script scr="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.26/moment-timezone-with-data.min.js"></script>
-    
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.26/moment-timezone-with-data.min.js"></script>
+
     <script type="text/javascript" src="js/reloj.js"></script>
 
     <title>Dreamers'Trip</title>
 </head>
+
 <body>
     <div id="selector-theme">
         <div id="to-pink">
@@ -39,22 +48,36 @@
     <section id="global">
         <header>
             <div id="logo">
-               <h1>Dreamers'Trip</h1>
+                <h1>Dreamers'Trip</h1>
             </div>
             <div class="clearfix"></div>
-            <nav id="menu">
+            <!--<nav id="menu">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="reloj.html">LA HORA</a></li>
                     <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contact.html">CONTACTO</a></li>
                 </ul>
+            </nav>-->
+            <!--navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-center" id="menu">
+                    <ul class="navbar-nav text-center text-center" id="desktop">
+                        <li><a class="nav-link" href="index.html">INICIO</a></li>
+                        <li><a class="nav-link" href="reloj.html">LA HORA</a></li>
+                        <li><a class="nav-link" href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                        <li><a class="nav-link" href="contact.html">CONTACTO</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <!--contenido-->
         <section id="content">
             <div id="reloj">
-                <!--Se carga el reloj--> 
+                <!--Se carga el reloj-->
                 <div class="grid">
                     <div class="left">
                         <h2>Argentina</h2>
@@ -62,19 +85,19 @@
                         <div id="relojArg"></div>
                     </div>
                     <div class="right">
-                        <h2>New York</h2> 
+                        <h2>New York</h2>
                         <img src="img/new-york-hora.jpg">
                         <div id="relojNewYork"></div>
                     </div>
                     <div class="left">
                         <h2>Amsterdam</h2>
                         <img src="img/amsterdam-hora.jpg">
-                        <div id="relojAmsterdam"></div> 
+                        <div id="relojAmsterdam"></div>
                     </div>
                     <div class="right">
                         <h2>Moscow</h2>
                         <img src="img/moscow-hora.jpg">
-                        <div id="relojMoscow"></div>  
+                        <div id="relojMoscow"></div>
                     </div>
                     <div class="left">
                         <h2>Berlin</h2>
@@ -84,12 +107,12 @@
                     <div class="right">
                         <h2>Darwin</h2>
                         <img src="img/darwin-hora.jpg">
-                        <div id="relojDarwin"></div>  
+                        <div id="relojDarwin"></div>
                     </div>
                     <div class="left">
                         <h2>Madrid</h2>
                         <img src="img/madrid-hora.jpg">
-                        <div id="relojMadrid"></div> 
+                        <div id="relojMadrid"></div>
                     </div>
                     <div class="right">
                         <h2>Roma</h2>
@@ -104,16 +127,18 @@
                     <div class="right">
                         <h2>San Pablo</h2>
                         <img src="img/san-pabo-hora.jpg">
-                        <div id="relojSanPablo"></div>  
+                        <div id="relojSanPablo"></div>
                     </div>
                 </div>
-            </div>   
-            <hr class="v" />      
+            </div>
+            <hr class="v" />
             <aside id="sidebar">
                 <div id="about">
                     <h4>Quien soy?</h4>
                     <img src="img/playa.jpg">
-                    <p>No llegaste aqui de casualidad, te gusta viajar, te gusra conocer lugares nuevos, sos aventurero o aventurera, estas soñando despierto y haciendo realidad todo eso que deseas. Sos un soñador por eso tenemos el viaje para vos. Ingresá.</p>
+                    <p>No llegaste aqui de casualidad, te gusta viajar, te gusra conocer lugares nuevos, sos aventurero
+                        o aventurera, estas soñando despierto y haciendo realidad todo eso que deseas. Sos un soñador
+                        por eso tenemos el viaje para vos. Ingresá.</p>
                 </div>
                 <div id="login">
                     <h4>Ingresa</h4>
@@ -121,18 +146,21 @@
                         <lavel for="name">
                             Name
                         </lavel>
-                        <input type="text" name="name" id="form_name"><br>
-
+                        <br>
+                        <input type="text" name="name" id="form_name">
+                        <br>
                         <lavel for="email">
                             Email
                         </lavel>
+                        <br>
                         <input type="text" name="email">
-
+                        <br>
                         <lavel for="password">
                             Password
                         </lavel>
+                        <br>
                         <input type="password" name="password">
-
+                        <br>
                         <input type="submit" value="Entrar">
                     </form>
                 </div>
@@ -140,8 +168,9 @@
             <div class="clearfix"></div>
         </section>
     </section>
-        <footer>
-            Pagina de proyecto U-demy &copy;
-        </footer>
+    <footer>
+        Pagina de proyecto U-demy &copy;
+    </footer>
 </body>
+
 </html>

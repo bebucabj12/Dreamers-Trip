@@ -7,7 +7,6 @@ $(document).ready(function(){
       });
 
     //Post
-
     var posts = [
         {
             title: 'Prueba de titulo 1',

@@ -59,7 +59,4 @@ $(document).ready(function(){
         $('#relojSanPablo').html(relojSanPablo);
 
     }, 1000)
-
-
-
 });

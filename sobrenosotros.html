@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,23 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="flaticon.css">
     <link rel="stylesheet" id="theme" type="text/css" href="css/pink.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">    
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
     <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/sobrenosotros.js"></script>
     <title>Dreamers'Trip</title>
 </head>
+
 <body>
     <div id="selector-theme">
         <div id="to-pink">
@@ -32,49 +40,72 @@
     <section id="global">
         <header>
             <div id="logo">
-               <h1>Dreamers'Trip</h1>
+                <h1>Dreamers'Trip</h1>
             </div>
             <div class="clearfix"></div>
-            <nav id="menu">
+            <!--<nav id="menu">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="reloj.html">LA HORA</a></li>
                     <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contact.html">CONTACTO</a></li>
                 </ul>
+            </nav>-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-center" id="menu">
+                    <ul class="navbar-nav text-center text-center" id="desktop">
+                        <li><a class="nav-link" href="index.html">INICIO</a></li>
+                        <li><a class="nav-link" href="reloj.html">LA HORA</a></li>
+                        <li><a class="nav-link" href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                        <li><a class="nav-link" href="contact.html">CONTACTO</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <!--contenido-->
         <section id="content">
             <div id="box">
-                <!--Se carga el acordeon--> 
+                <!--Se carga el acordeon-->
                 <div id="acordeon">
-                    <h3>Quiénes somos</h3>      
+                    <h3>Quiénes somos</h3>
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus suscipit consequatur corrupti eveniet nihil eius aut alias totam voluptates fugit, ex, illo ea molestiae natus perferendis voluptas molestias ipsum!</p>                  
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus suscipit consequatur
+                            corrupti eveniet nihil eius aut alias totam voluptates fugit, ex, illo ea molestiae natus
+                            perferendis voluptas molestias ipsum!</p>
                     </div>
 
-                    <h3>Qué hacemos</h3>      
+                    <h3>Qué hacemos</h3>
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus suscipit consequatur corrupti eveniet nihil eius aut alias totam voluptates fugit, ex, illo ea molestiae natus perferendis voluptas molestias ipsum!</p>                  
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus suscipit consequatur
+                            corrupti eveniet nihil eius aut alias totam voluptates fugit, ex, illo ea molestiae natus
+                            perferendis voluptas molestias ipsum!</p>
                     </div>
 
-                    <h3>Porqué lo hacemos</h3>      
+                    <h3>Porqué lo hacemos</h3>
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus suscipit consequatur corrupti eveniet nihil eius aut alias totam voluptates fugit, ex, illo ea molestiae natus perferendis voluptas molestias ipsum!</p>                  
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus suscipit consequatur
+                            corrupti eveniet nihil eius aut alias totam voluptates fugit, ex, illo ea molestiae natus
+                            perferendis voluptas molestias ipsum!</p>
                     </div>
 
-                    <h3>Cómo ser parte</h3>      
+                    <h3>Cómo ser parte</h3>
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus suscipit consequatur corrupti eveniet nihil eius aut alias totam voluptates fugit, ex, illo ea molestiae natus perferendis voluptas molestias ipsum!</p>                  
-                    </div> 
-                </div>  
-            </div>         
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus suscipit consequatur
+                            corrupti eveniet nihil eius aut alias totam voluptates fugit, ex, illo ea molestiae natus
+                            perferendis voluptas molestias ipsum!</p>
+                    </div>
+                </div>
+            </div>
             <aside id="sidebar">
                 <div id="about">
                     <h4>Quien soy?</h4>
                     <img src="img/playa.jpg">
-                    <p>No llegaste aqui de casualidad, te gusta viajar, te gusra conocer lugares nuevos, sos aventurero o aventurera, estas soñando despierto y haciendo realidad todo eso que deseas. Sos un soñador por eso tenemos el viaje para vos. Ingresá.</p>
+                    <p>No llegaste aqui de casualidad, te gusta viajar, te gusra conocer lugares nuevos, sos aventurero
+                        o aventurera, estas soñando despierto y haciendo realidad todo eso que deseas. Sos un soñador
+                        por eso tenemos el viaje para vos. Ingresá.</p>
                 </div>
                 <div id="login">
                     <h4>Ingresa</h4>
@@ -82,18 +113,21 @@
                         <lavel for="name">
                             Name
                         </lavel>
-                        <input type="text" name="name" id="form_name"><br>
-
+                        <br>
+                        <input type="text" name="name" id="form_name">
+                        <br>
                         <lavel for="email">
                             Email
                         </lavel>
+                        <br>
                         <input type="text" name="email">
-
+                        <br>
                         <lavel for="password">
                             Password
                         </lavel>
+                        <br>
                         <input type="password" name="password">
-
+                        <br>
                         <input type="submit" value="Entrar">
                     </form>
                 </div>
@@ -101,8 +135,9 @@
             <div class="clearfix"></div>
         </section>
     </section>
-        <footer>
-            Pagina de proyecto U-demy &copy;
-        </footer>
+    <footer>
+        Pagina de proyecto U-demy &copy;
+    </footer>
 </body>
+
 </html>
